@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Slug Generator</title>
+</head>
+
+<body>
+	<main>
+		<form id="slugForm">
+			<div class="form-group">
+				<label for="inputTitle">Title of webpage</label>
+				<input type="text" id="inputTitle" name="inputTitle" placeholder="Ex: Your Mom" autocomplete="off" required />
+			</div>
+
+			<div class="form-group">
+				<label for="outputURL">URL slug</label>
+				<input type="text" id="outputURL" name="outputURL" placeholder="Ex: your-mom" readonly aria-readonly="true" />
+			</div>
+
+			<button id="getBtn" type="submit">Generate</button>
+
+			<div id="status" aria-live="polite"></div>
+		</form>
+	</main>
+
+	<script src="popup.js"></script>
+</body>
+
+</html>
